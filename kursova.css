@@ -1,0 +1,265 @@
+body {
+background: url('111.jpg') ;
+background-size: cover; 
+}
+.gallery{
+background: url('111.jpg') ;
+background-attachment: fixed;
+background-size: cover; 
+}
+nav ul li{
+border-radius: 25px; /*заобляне в краищата*/
+padding-left: 10px;
+border-right: 10px;}
+ul li{
+font-size: 20px;
+widows: 30%;
+height: 20px;
+}
+ul li ul li{ /*елементите в dropdown*/
+font-size:20px;
+height: 40px;
+display:none; /*да не показва елементите*/
+background-color: #F2F3F4;
+padding-right: 10px;
+padding-top: 5px;
+text-align: center;
+}
+ul li:hover ul li{display:block;} /*елементите в dropdown да се покажат*/
+ul li a:hover { /*ховър на dropdown*/
+border-radius: 15px;
+background-color:lightblue;
+text-decoration: none; /*да не подчертава*/
+}
+a {color: black;}
+a:hover{color: black;text-decoration: none;background-color: lightblue;}
+/*(a)линковете да не са сини и подчертани!!!!!*/
+.form{ /*цялата форма за контакт*/
+color:white;
+width:40%;
+position: absolute;
+top:52%; left: 73%;
+transform: translate(-50%,-50%);
+box-sizing: border-box;
+background: rgba(0,0,0,.75);
+box-shadow: 40 15px 25px rgba(0,0,0,.75);
+border-radius: 35px;
+}
+.pole1{ /*полето в занас*/
+color:white;
+padding-left:1%;
+padding-top: 1%;
+padding-right:1%;
+font-size:21px;
+width: 64%;
+height: 40%;
+position: absolute;
+top:30%; left:35%;
+transform: translate(-50%,-50%);
+box-sizing: border-box;
+background: rgba(0,0,0,.75);
+box-shadow: 40 15px 25px rgba(0,0,0,.75);
+border-radius: 35px;
+-webkit-user-select: none;
+-moz-user-select:none;
+-ms-user-select:none; /*текстът да не се маркира*/
+}
+.pole{ /*полето на началната страница*/
+text-align: center;
+color:white;
+font-size:90px;
+width: 85%;
+height: 40%;
+position: absolute;
+top:11%; left:8%;
+/*transform: translate(-50%,-50%);*/
+box-sizing: border-box;
+background: rgba(0,0,0,.75);
+box-shadow: 40 15px 25px rgba(0,0,0,.75);
+border-radius: 35px;
+-webkit-user-select: none;
+-moz-user-select:none;
+-ms-user-select:none;/* да не се маркира текстът*/
+}
+.kontakti{ /*полето контакти и черният фон зад него*/
+font-size: 24px;
+position: absolute;
+top:45%; left:22%;
+transform: translate(-50%,-50%);
+width: 30%;
+height: 45%;
+color:white; /*цвят-текст*/
+padding-left:1%;
+padding-right: 1%;
+box-sizing: border-box;
+background: rgba(0,0,0,.75);/* черният фон зад текст-а*/
+box-shadow: 40 15px 25px rgba(0,0,0,.75);
+border-radius: 35px;
+text-align: center; /*центриране на текст*/ 
+}
+nav{position: relative;z-index:1;}/*навигацията да е над всички елементи*/
+.navbar-header{border-radius: 35px;} 
+.kartinka-home{
+height: 40%;
+width: 38%;
+position: absolute;
+top:52%; left:30%;
+/*transform: translate(-50%,-50%);*/
+}
+.kartinka-home img{ height: 100%; width: 100%;} /*картинката да fit-ne в рамките си*/
+.kartinka-home:hover{opacity: .8;}
+.kartinka-zanas{
+height: 30%;
+width: 27%;
+position: absolute;
+top:30%; left:82%;
+transform: translate(-50%,-50%);
+}
+.kartinka-zanas:hover{opacity: .8;}
+.kartinka-zanas img{ height: 100%; width: 100%;}
+.footer{
+z-index:100000000000;
+font-size:21px;
+position: fixed;
+right:0;
+bottom:0;
+left:0;
+background-color:#E0E0E0;
+height: 33px;
+width: 100%;
+padding-left: 17%;
+border-radius: 35px;
+} 
+.footer a{margin-right: 15%;}
+.footer a:hover{border-radius: 15px;}
+.pole-pod-snimka-zanas{
+color:white;
+padding-left:1%;
+padding-top: 1%;
+padding-right:1%;
+font-size:21px;
+width: 64%;
+height: 40%;
+position: absolute;
+top:72%; left:65%;
+transform: translate(-50%,-50%);
+box-sizing: border-box;
+background: rgba(0,0,0,.75);
+box-shadow: 40 15px 25px rgba(0,0,0,.75);
+border-radius: 35px;
+-webkit-user-select: none;
+-moz-user-select:none;
+-ms-user-select:none; /*текстът да не се маркира*/
+}
+.kartinka-zanas2{
+padding-top: 2%;
+height: 35%;
+width:22%;
+position: absolute;
+top:69%; left:19%;
+transform: translate(-50%,-50%);
+}
+.kartinka-zanas2 img{ height: 100%; width: 100%;}
+.kartinka-zanas2:hover{opacity: .8;}
+.produkti-pole{
+-webkit-user-select: none;
+-moz-user-select:none;
+-ms-user-select:none;
+color:white;
+position: absolute;
+top: 10px;
+left: 10px;
+right:10px;
+bottom: 10px;
+background: rgba(0,0,0,.75);border-radius: 35px;
+text-align: center;
+padding-top: 30px;
+transform:scaleY(0); /*състояние-скрит текст*/
+transition: transform .5s;  /*време за което да се покаже*/
+} 
+.box:hover .produkti-pole{ 
+/*ТОЗИ РЕД ТРЯБВА ДА Е ТАКА, А НЕ САМО .BOX:HOVER*/
+transform:scaleY(1); /*1=да се покаже текст-а*/
+}
+.box{
+position: relative;
+width: 550px;
+height: 500px;
+box-sizing: border-box;
+transform:scaleY(1);
+transition: transform .5s;
+display: inline-block;
+margin-right: 6%;
+}
+.galeriqta{padding-left: 6%;}
+.kartinka-gallery{ /*всяка картинка в галерията*/
+width: 520px;
+height: 470px;
+float: left; 
+padding-left: 40px;
+padding-top: 40px;
+padding-right: 10px;
+position: relative;
+
+}
+.kartinka-gallery img{height: 100%; width: 100%;}
+.zaglavie{ /*за продуктите*/
+padding-top: 5%;
+text-align: center;
+font-size: 30px;
+font-weight: bold;
+-webkit-user-select: none;
+-moz-user-select:none;
+-ms-user-select:none;
+color:white;
+}
+.text-produkt{
+-webkit-user-select: none;
+-moz-user-select:none;
+-ms-user-select:none;
+padding-top: 14%;
+font-size: 24px;
+}
+.zaglavie2{
+-webkit-user-select: none;
+-moz-user-select:none;
+-ms-user-select:none;
+color:white;
+text-align: center;
+font-size: 30px;
+font-weight: bold;
+}
+.table-table-hover{
+background-color: lightblue;
+width: 45%;
+border-radius: 20px;
+margin-left:28%;
+margin-top: 2%;
+-webkit-user-select: none;
+-moz-user-select:none;
+-ms-user-select:none;
+text-align-last: center;
+}
+.tr-head{
+text-align-last: center;/* заглавието в таблицата*/
+-webkit-user-select: none;
+-moz-user-select:none;
+-ms-user-select:none;}
+.pole-novini{
+padding-left:1%;
+padding-right:1%;
+color:white;
+font-size:21px;
+width: 60%;
+height: 25%;
+position: absolute;
+top:74%; left:50%;
+transform: translate(-50%,-50%);
+box-sizing: border-box;
+background: rgba(0,0,0,.75);
+box-shadow: 40 15px 25px rgba(0,0,0,.75);
+border-radius: 35px;
+-webkit-user-select: none;
+-moz-user-select:none;
+-ms-user-select:none;
+}
